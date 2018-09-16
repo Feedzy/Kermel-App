@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% block title %}Kermel App!{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('build/bootstrap.css') }}">
+            <link rel="stylesheet" href="{{ asset('build/style.css') }}">
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+            {% block Header %}
+                <header>
+                    <div class="container-fluid" id="zone-de-connexion">
+                        <a href="#connexion" id="connexion" class="offset-lg-12 offset-sm-12 offset-8 offset-xl-11">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEbSURBVEhL7ZSxTsMwEIYjBsZK7LD3GcpjVCic+wZIVR/BEk7Eg6AKxTadEWvegI5lgjmoLRsL3NELjWoXEpNu+aRfis53/0W+S6KOVlB38ZnSwioN628ZmKUW+nz8P8g8MaJAfVaFTd7k/eiU08KhN9813woMp4WDRu+ucSlYcVo4aHTYBjRQvznOQYuM08KhbaGBehoUrQyZ2GwSGLoSZcQSzXVr5h17kVIepVacJxqubqbihMM/UOw6g4ky8YByOfw3Ul8cK305RuPXcmNwixaJhaG8HfVI9Izx5/Ic9UI1VMs2fmgz8Gc2rxQ2FDz9ul24go/+wvrCj++B7VzwKj58RU1EHmzn4isIEdu54GG+mxygnO066hBFXwnUnRCKNrQzAAAAAElFTkSuQmCC" id="icon_connexion">
+                            Connexion
+                        </a>
+                    </div>
+
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#" id="Kermel_App">Kermel-App</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control form-control-sm" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-outline-success">Accueil</button>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-outline-success">Produits</button>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-outline-success">Tendances</button>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </nav>
+
+                </header>
+                {% endblock %}
+        {% endblock %}
+        {% block javascripts %}
+            <script src="{{ asset('build/bootstraps.js') }}"></script>
+            <script src="{{ asset('build/jquery.js') }}"></script>
+            <script src="{{ asset('build/index.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>

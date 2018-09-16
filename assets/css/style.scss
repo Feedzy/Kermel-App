@@ -1,0 +1,31 @@
+$couleur_background: #b5bdb5;
+$couleur_zone_connexion: #303030;
+
+@mixin police($taille, $type, $couleur){
+  font-size: $taille;
+  font-family: $type;
+  color: $couleur;
+}
+
+
+body {
+    background-color: $couleur_background;
+}
+#zone-de-connexion{
+    position: absolute;
+    background-color: $couleur_zone_connexion;
+    height: 4%;
+}
+#connexion{
+  @include police(15px, "Alepholon",#84ab5a);
+}
+
+#icon_connexion{
+  height: 15px;
+}
+nav{
+  position: relative;
+  top: 1.5em;
+}
+#Kermel_App {
+  @include police(19px,"Alepholon", #84ab5a);}
